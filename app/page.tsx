@@ -28,7 +28,8 @@ export default function Home() {
         <SearchBar/>
         <PopualArea>
           <PopualHeading>
-
+            <span><Image src={`/music-note.png`} width={30} height={30}/></span>
+            <span>Popular</span>
           </PopualHeading>
 
           <List>
@@ -123,6 +124,16 @@ const SLink = styled(Link)`
 
 
 const PopualArea = styled.div``;
-const PopualHeading = styled.div``;
+const PopualHeading = styled.div`
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+  padding-bottom:1rem;
+  border-bottom: 1px solid gray;
+`;
 const List = styled.div``;
-const ListRow = styled.div``;
+const ListRow = styled.div`
+  display: flex;
+`;
